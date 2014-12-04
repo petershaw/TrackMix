@@ -7,20 +7,22 @@
 //
 
 import Foundation
+import AudioToolbox
 
 class Track {
-    private var _volume: Float = 0.0
-    var volume: Float {
-        get {
-            return _volume
-        }
-        set {
-            _volume = newValue
+    var volume: Float = 0.0 {
+        willSet {
+            passValueToSystemVolume(newValue)
         }
     }
     
     init(){
         self.volume = 0.0
+    }
+    
+    func passValueToSystemVolume(value: Float){
+        //AudioQueueSetParameter(AudioQueueRef, kAudioQueueParam_Volume, 0.5);
+
     }
     
 }
