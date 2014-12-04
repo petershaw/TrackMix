@@ -189,8 +189,8 @@
                                     <action selector="takeFloatValueForVolumeFrom:" target="XfG-lQ-9wD" id="tdb-f8-OR2"/>
                                 </connections>
                             </textField>
-                            <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-Rf-sRa">
-                                <rect key="frame" x="80" y="39" width="20" height="183"/>
+                            <slider horizontalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fA-Rf-sRa">
+                                <rect key="frame" x="80" y="39" width="20" height="182"/>
                                 <sliderCell key="cell" continuous="YES" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="right" sliderType="linear" id="vGp-jc-kkc"/>
                                 <connections>
                                     <action selector="takeFloatValueForVolumeFrom:" target="XfG-lQ-9wD" id="cQJ-m8-PhK"/>
